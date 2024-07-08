@@ -1,5 +1,6 @@
 # STAD-GCN: Spatial-Temporal Attention-based Dynamic Graph Convolutional Network for Market Price Prediction
-We introduce STAD-GCN, a pioneering model that integrates temporal and spatial elements within a graph-based framework. This fusion amplifies our understanding of market dynamics and the factors influencing price determination. 
+We introduce STAD-GCN, a pioneering model that integrates temporal and spatial elements within a graph-based framework. This fusion amplifies our understanding of market dynamics and the factors influencing price determination. For more detailed information, please refer to my paper:
+- [STAD-GCN paper](https://doi.org/10.1016/j.eswa.2024.124553)
 
 The below figure is the Architectural Overview of STAD-GCN: Multimodal Fusion with ASTGCN and LSTM for Retail Gasoline Price Prediction is outlined as follows: (A) Preprocessing: Input data is preprocessed based on its characteristics. It is formatted as a graph-based time series and routed to (B), while also treated as a standard time series sent to (C). (B) ASTGCN module: The graph-structured data passes through two spatial-temporal (ST) blocks to capture both spatial and temporal dependencies. (C) LSTM module: The standard time series data is processed through LSTM blocks to capture dynamic temporal features. (D) Output module: The outputs from (B) and (C) are fused together and processed through a fully-connected layer to generate the final prediction.
 
@@ -39,3 +40,16 @@ If you wish to access more data, please visit the following site.
 - **num_for_predict**: number of steps to predict
 - **save_path**: save path for model
 - **device**: CPU/GPU
+
+# Citation
+```
+@article{kim2024stad,
+  title={STAD-GCN: Spatial-Temporal Attention-based Dynamic Graph Convolutional Network for retail market price prediction},
+  author={Kim, Sodam and Park, Eunil},
+  journal={Expert Systems with Applications},
+  pages={124553},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
